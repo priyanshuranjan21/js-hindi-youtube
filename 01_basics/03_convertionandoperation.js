@@ -29,3 +29,35 @@ console.log(typeof numFromString3); // "number"
 
 
 
+/****operations */
+
+let val=10;
+sir=-val;
+console.log(sir); // -10
+
+// console.log(2+2); 
+// console.log(2-2); 
+// console.log(2*2); 
+// console.log(2/2); 
+// console.log(2%2); 
+// console.log(2**2); 
+// console.log(2**3); // thi means 2 rase to the power 3
+
+// console.log("1" + 2);output // "12" // string concatenation
+// console.log(1 + "2");output // "12" // string concatenation
+// console.log(1 + 2); // 3 // number addition
+// console.log("1" + 2 + 2);output // "122" // string concatenation in this string is the greatest so all concatenation will be done
+// console.log(1 + 2 + "2"); // "32" // number addition followed by string concatenation because addition is done first and then string concatenation
+// console.log("1" + 2 + 2); // "122" // string concatenation because string is the greatest type
+// console.log(1 + 2 + "2");output // "32" // number addition followed by string concatenation because acma script which comes forst is addition and then string so greater is addition forst then through string concate it 
+
+let x = 3;
+const y = x++;
+// x is 4; y is 3 ;prefix increment means first increment the value of x and then assign it to y and postfix means first assign the value of x to y and then increment it
+
+
+let x2 = 3n;
+const y2 = x2++;
+// x2 is 4n; y2 is 3n
+
+

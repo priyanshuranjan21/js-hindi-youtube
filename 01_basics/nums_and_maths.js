@@ -45,9 +45,11 @@ console.log(Math.random());// generates a random number between 0 and 1
 console.log((Math.random()*10) + 1);//generates a random number between 1 and 10
 console.log(Math.floor(Math.random()*10) + 1);//generates a random integer between 1 and 10
 const min = 10
- const max = 20
+const max = 20
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)// generates a random integer between min and max (inclusive)
 // Generate a random number between 0 and 100
 console.log(Math.floor(Math.random() * 101)); // generates a random integer between 0 and 100
+
+
 
 

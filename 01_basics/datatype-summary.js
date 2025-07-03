@@ -59,5 +59,27 @@ console.log(typeof greet);  // "function" it is function type
 
 
 
+// ++++++++++++++++++++++++++++satack and heap memory +++++++++++++++++++++++++++++++
+
+// satck memory is used for primitive data types and reference types that is noon primitive are stored in heap memory.
+
+let myYoutubename = "hiteshchoudharydotcom";
+let anothername = myYoutubename
+anothername= "chaiaurcode"
+console.log(myYoutubename);
+console.log(anothername);
 
 
+let myYoutubenam = "hiteshchoudharydotcom"
+let anothernam = myYoutubename
+anothername = "chaiaurcode"
+console.log(myYoutubenam);
+console.log(anothername);
+let userOne = {
+email: "user@google.com",
+upi: "user@ybl"
+}   
+let userTwo = userOne
+userTwo.email = "hitesh@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);

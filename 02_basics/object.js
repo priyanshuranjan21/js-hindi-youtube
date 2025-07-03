@@ -76,7 +76,8 @@ student.greet();      // Output: Hello Priyanshu
 console.log(student.address.city); // Output: New York  how to access object inside object
 
 
-// to combine two or more object 
+// to combine two or more objects into a new object,
+// we can use object.assign() or the spread operator  
 let person2 = {
   name: "John",
   age: 30
@@ -125,8 +126,6 @@ people.forEach(person => {
 // using object.key and object.value we can also iterate over the object properties and values as well as we can print it 
 console.log(Object.keys(person)); // Output: [ 'name', 'prince', 'age', 'ptrasdff', 'location', 'email', 'isloggidin', 'greet' ] keys of the object
 console.log(Object.values(person)); // Output: [ 'John', 'priyasnhu', 30, 'priyanshu', 'New York', 'priyanshuranjan @gmail.com', false, [Function: greet] ] values of the object
-
-
 
 
 
