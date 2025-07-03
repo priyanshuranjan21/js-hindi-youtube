@@ -53,8 +53,21 @@ form.addEventListener('submit', function (e) {
   }
 });
 
+## projact 3
 
+''' javascript
+'''
+// console.log(date.toLocaleTimeString());
+// setInterval(function(){},10000) methode is a methode which tells us give me a method and tell me in how many time interval  need to run the  the code again and again 
 
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock')
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+   clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 
 
 
