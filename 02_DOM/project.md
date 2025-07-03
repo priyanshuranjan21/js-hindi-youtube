@@ -1,7 +1,7 @@
 ### Project 1 Solution
 
 ```javascript
-console.log("hitesh");
+console.log("priyanshu");
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -26,10 +26,9 @@ buttons.forEach(function (button) {
 });
 
 
+### Project 2 Solution
 
-## project 2 solution 
-'''
-javascript project 
+
 
 const form = document.querySelector('form');
 // this usecase will give you empty
@@ -53,7 +52,7 @@ form.addEventListener('submit', function (e) {
   }
 });
 
-## projact 3
+### Project 3 Solution
 
 ''' javascript
 
@@ -70,8 +69,9 @@ setInterval(function () {
 }, 1000);
 
 
-## project 3
-'''javascript simple gess game 
+### Project 4 Solution
+
+''' javascript simple gess game 
 
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
@@ -165,6 +165,8 @@ function newGame() {
     playGame = true;
   });
 }
+
+
 
 
 ## for learning things purpose
