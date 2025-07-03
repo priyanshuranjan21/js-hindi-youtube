@@ -1,4 +1,5 @@
 ## project 1 solution 
+'''javascript
 
 console.log("hitesh")
 const buttons = document.querySelectorAll('.button');
@@ -29,7 +30,6 @@ buttons.forEach(function (button) {
 ## project 2 solution 
 '''
 javascript project 
-'''
 
 const form = document.querySelector('form');
 // this usecase will give you empty
@@ -56,7 +56,7 @@ form.addEventListener('submit', function (e) {
 ## projact 3
 
 ''' javascript
-'''
+
 // console.log(date.toLocaleTimeString());
 // setInterval(function(){},10000) methode is a methode which tells us give me a method and tell me in how many time interval  need to run the  the code again and again 
 
@@ -72,7 +72,6 @@ setInterval(function () {
 
 ## project 3
 '''javascript simple gess game 
-'''
 
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
