@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHitesh = function(){
+        console.log("priyanshu");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html>
+
+<!-- | Function        | What it Does                                   |
+| --------------- | ---------------------------------------------- |
+| `setTimeout`    | Runs a function **once after a delay**         |
+| `clearTimeout`  | **Stops** a `setTimeout` before it runs        |
+| `setInterval`   | Runs a function **repeatedly after intervals** |
+| `clearInterval` | **Stops** a `setInterval` loop                 |
+-->
+
+<!-- | Feature     | **Callback**                          | **Handler**                             |
+| ----------- | ------------------------------------- | --------------------------------------- |
+| Meaning     | Function passed into another function | Special kind of callback for **events** |
+| Use case    | Async tasks, array functions, etc.    | Event handling (click, input, keyup)    |
+| Example Use | `setTimeout(fn, 2000)`, `map()`, etc. | `addEventListener('click', handler)`    |
+-->
