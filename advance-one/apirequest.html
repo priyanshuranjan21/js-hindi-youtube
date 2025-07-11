@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div id="card-container"></div>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            // Create card
+            const card = document.createElement('div');
+            card.style.background = '#333';
+            card.style.padding = '20px';
+            card.style.borderRadius = '10px';
+            card.style.width = '250px';
+            card.style.textAlign = 'center';
+            card.style.margin = '40px auto';
+
+            // User photo
+            const img = document.createElement('img');
+            // const img = document.createElement('img')
+            img.src = data.avatar_url; //through data. we can access any things as the object are accessed like theat only 
+
+            img.alt = 'User Avatar';
+            img.style.width = '100px';
+            img.style.height = '100px';
+            img.style.borderRadius = '50%';
+            img.style.display = 'block';
+            img.style.margin = '0 auto 15px';
+        
+            
+
+            // there are 
+
+            // Followers
+            const followers = document.createElement('p');
+            followers.textContent = `Priyanshu: ${data.followers}`;
+            followers.style.fontSize = '18px';
+            // note const imageUrl = data.avatar_url; // This gets the image URL from the object
+
+
+            // Append to card
+            card.appendChild(img);
+            card.appendChild(followers);
+
+            // Display card
+            document.getElementById('card-container').appendChild(card);
+        }
+    }
+    xhr.send();
+</script>
+</html>
